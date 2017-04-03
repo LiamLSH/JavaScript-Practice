@@ -1,0 +1,26 @@
+function truncateString(str, num) {
+  // This function will truncate a given string by a given number
+  var arrOne = str.split("");
+  var arrTwo = [];
+  var answer;
+  if (str.length > num) {
+    if (num <= 3) {
+      // if less than or 3 don't leave room for dots
+      for (var a = 0; a < num; a++) {
+        arrTwo.push(arrOne[a]);
+      } 
+    } else {
+      // if over 3 then leave room for dots
+      for (var b = 0; b < num-3; b++) {
+        arrTwo.push(arrOne[b]);
+      }
+    }
+    for (var i = 1; i <= 3; i++) {
+      arrTwo.push(".");
+    }
+    answer = arrTwo.join("");
+    return answer;
+  } else {
+    return str;
+  }
+}
