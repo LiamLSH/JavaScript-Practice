@@ -1,0 +1,6 @@
+function removeFalse(arr) {
+  // This should filter out all falsy values
+  return arr.filter( function( value ){
+    return value;
+  });
+}
