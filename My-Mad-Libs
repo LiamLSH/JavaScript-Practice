@@ -1,0 +1,10 @@
+function myMadLibs(myNoun, myAdjective, myVerb, myAdverb) {
+  var result = "According to that ";
+  result += myAdjective + " " + myNoun + " over there.";
+  result += " You " + myVerb + " very " + myAdverb + " to the toilet,";
+  result += " after eating those dodgy sausages.";
+  return result;
+}
+
+// Because it's funny:
+myMadLibs("Wizard", "ginger", "crawled", "slowly");
