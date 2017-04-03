@@ -1,0 +1,12 @@
+function stringRepeat(str, num) {
+  // String will repeat a given number of times
+  var answer;
+  if (num < 1)
+    return "";
+  if (num >= 1)
+    answer = str;
+    for (var i = 1; i < num; i++) {
+      answer += str;
+    }
+  return answer;
+}
