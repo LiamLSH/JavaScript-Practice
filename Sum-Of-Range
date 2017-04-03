@@ -1,0 +1,11 @@
+function sumRange(arr) {
+  var min = Math.min(arr[0], arr[1]);
+  var max = Math.max(arr[0], arr[1]);
+  var answer = 0;
+  for (var i = min; i <= max; i++) {
+    answer = answer + i;
+  }
+  return answer;
+}
+
+sumRange([1, 4]);
