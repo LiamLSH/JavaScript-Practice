@@ -1,0 +1,14 @@
+function palindromeCheck(str) {
+  // This will check for palindromes
+  var a = str.replace(/[^A-Za-z0-9]/g, "");
+  var i;
+  a = a.toLowerCase();
+  i = a;
+  i = i.split("");
+  i = i.reverse();
+  i = i.join("");
+  if (i == a)
+    return true;
+  else
+    return false;
+}
