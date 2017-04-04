@@ -1,0 +1,13 @@
+// Will return the longest word in a string but doesn't look for punctuation yet.
+function longestWord(str) {
+  var strSplit = str.split(' ');
+  var longWord = 0;
+  for(var i = 0; var loopMax = strSplit.length; i < loopMax; i++){
+    if(strSplit[i].length > longWord){
+	longWord = strSplit[i].length;
+     }
+  }
+  return longWord;
+}
+
+longestWord("The quick brown fox jumped over the lazy dog");
